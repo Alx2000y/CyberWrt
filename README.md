@@ -1,9 +1,14 @@
 # CyberWrt
 CyberWrt OpenWrt package 
 
-Инструкция для сборки под любую версию OpenWRT
+Оригинальная прошивка CyberWrt http://cyber-place.ru/showthread.php?t=720
 
-На примере Сhaos Сalmer 15.05 и роутера TR-ML3020
+Эта инструкция позволяет настроить установки под себя (сеть, набор модулей и т.д.)
+добавить модули которые требуются
+получить доступ к последним обновлениям openwrt
+
+
+Инструкция для сборки на примере Сhaos Сalmer 15.05 и роутера TR-ML3020
 
 если ещё не настраивалось окружение, то поставить зависимости
 ```
@@ -39,6 +44,12 @@ $ cp /opt/OpenWrt-SDK-15.05-ar71xx-generic_gcc-4.8-linaro_uClibc-0.9.33.2.Linux-
 ```
 $ cd /opt/OpenWrt-ImageBuilder-15.05-ar71xx-generic.Linux-x86_64
 $ make image PROFILE=TLMR3020 PACKAGES="CyberWrt uhttpd kmod-usb-core kmod-usb-ohci kmod-usb-storage kmod-usb2 kmod-fs-ext4 block-mount"
+```
+
+Если не требуется поддержка флэшек, достаточно:
+```
+$ cd /opt/OpenWrt-ImageBuilder-15.05-ar71xx-generic.Linux-x86_64
+$ make image PROFILE=TLMR3020 PACKAGES="CyberWrt uhttpd"
 ```
 
 Прошивка находится в /opt/OpenWrt-ImageBuilder-15.05-ar71xx-generic.Linux-x86_64/bin/ar71xx/
