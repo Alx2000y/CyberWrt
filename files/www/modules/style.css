@@ -1,0 +1,35 @@
+div.left {
+float:left;
+padding:5px;
+background-color: silver;
+line-height: 1.4em;
+background-color: #595959;
+color: #fefefe;
+border-right: 1px solid #797979;
+border-left: 1px solid #191919
+}
+div.left:hover{
+ background-color:black;
+}
+a img{border:none;
+}
+a{
+color: #595959;
+text-decoration: none;
+border-bottom: 1px dashed #000080;
+}
+a:hover{
+color:red;
+}
+div.hidden
+{
+display: none;
+position:absolute;
+text-align: center;
+margin-top: 1px;
+/*width: 50%;*/
+left:50%;
+margin-left:-25%;
+background-color:silver;
+border: 1px solid #797979;
+}

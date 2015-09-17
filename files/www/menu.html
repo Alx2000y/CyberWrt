@@ -1,0 +1,8 @@
+<body onload="startTime()"><div>
+<a href=/cgi-bin/modules/manmod/index.cgi><div class=left>Модули</div></a>
+<a href=/cgi-bin/modules/wifisettings/index.cgi><div class=left>Настройка_Wi-Fi</div></a>
+<a href="/cgi-bin/recovery.cgi" title=Перезагрузить или восстановить><div class=left><b><span id="txt"></span></b></div></a>
+</div><div style=clear:left;></div>
+<link rel=stylesheet type=text/css href=/modules/style.css>
+<script type="text/javascript">function startTime(){ var tm=new Date(); var h=tm.getHours(); var m=tm.getMinutes(); var s=tm.getSeconds(); m=checkTime(m); s=checkTime(s);document.getElementById('txt').innerHTML=h+":"+m+":"+s; t=setTimeout('startTime()',500); }
+function checkTime(i){ if (i<10) { i="0" + i;} return i; } </script>
