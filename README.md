@@ -22,7 +22,7 @@ $ tar -xvjf OpenWrt-SDK-15.05-ar71xx-generic_gcc-4.8-linaro_uClibc-0.9.33.2.Linu
 $ wget https://downloads.openwrt.org/chaos_calmer/15.05/ar71xx/generic/OpenWrt-ImageBuilder-15.05-ar71xx-generic.Linux-x86_64.tar.bz2
 $ tar -xvjf OpenWrt-ImageBuilder-15.05-ar71xx-generic.Linux-x86_64.tar.bz2
 ```
-Далее ecnfyfdkbdftv пакет CyberWrt
+Далее получаем пакет CyberWrt
 ```
 $ cd /opt/OpenWrt-SDK-15.05-ar71xx-generic_gcc-4.8-linaro_uClibc-0.9.33.2.Linux-x86_64/package/
 $ git clone https://github.com/Alx2000y/CyberWrt.git
